@@ -774,7 +774,7 @@ function buildFilm(m){
    .call(cue, ['flood'], 1.00)
    .call(cue, ['wish'], 1.68)
    .call(cue, ['wish2'], 2.06)
-   .call(cue, ['bloom'], 3.42);
+   .call(cue, ['bloom'], 13.42);
 
   // cinema bars ease into a letterbox
   t.to(barTop, { yPercent: 0, duration: 0.6, ease: 'power2.out' }, 1.5)
@@ -788,11 +788,16 @@ function buildFilm(m){
    .to(kSub, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, 2.74);
 
   // --- the handoff bloom -----------------------------------------------------
-  t.to(barTop, { yPercent: -100, duration: 0.5, ease: 'power2.in' }, 3.32)
-   .to(barBot, { yPercent: 100, duration: 0.5, ease: 'power2.in' }, 3.32)
-   .set(bloom, { autoAlpha: 1 }, 3.42)
-   .fromTo(bloom, { scale: 0.02 }, { scale: m.bloomScale, duration: 0.58, ease: 'power2.in' }, 3.42);
 
+t.to(barTop, { yPercent: -100, duration: 0.5, ease: 'power2.in' }, 13.32)
+ .to(barBot, { yPercent: 100, duration: 0.5, ease: 'power2.in' }, 13.32)
+ .set(bloom, { autoAlpha: 1 }, 13.42)
+ .fromTo(
+   bloom,
+   { scale: 0.02 },
+   { scale: m.bloomScale, duration: 0.58, ease: 'power2.in' },
+   13.42
+ );
   return t;
 }
 
