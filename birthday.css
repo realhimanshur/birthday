@@ -423,7 +423,7 @@ body{
 /* ============================================================
    REPLAY
    ============================================================ */
-.replay{
+
   .replay{
   position:absolute; right:20px; bottom:18px; z-index:20;
   pointer-events:auto;
