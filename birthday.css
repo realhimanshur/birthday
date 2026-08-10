@@ -308,7 +308,7 @@ body{
 
 /* cinema bars — closed = black, they open as the wish lands */
 .bar{
-  position:absolute; left:0; right:0; height:16vh;
+  position:absolute; left:0; right:0; height:8vh;
   background:#12040b; z-index:3; will-change:transform; pointer-events:none;
 }
 .bar--top{ top:0; }
